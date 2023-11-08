@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Procesamiento</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<!--VISTA-->
+<body>
+  <div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card text-white bg-success">
+              
+              <div class="card-body">
+                <div class="centrado">
+                    <h4 class="card-title">Procesamiento de Lenguaje narural</h4>
+                </div>
+                
+                <p class="card-text">Lista de Narrativas</p>
+               
+                <!-- Some borders are removed 
+                <ul class="list-group list-group-flush">
+                  {% for narrativa in narrativas %}
+                    {% if forloop.counter <= 10 %} {# Esto limita a mostrar solo los primeros 5 elementos #}
+                      <li class="list-group-item">{{ narrativa.id }}</li>
+                    {% endif %}
+                  {% endfor %}
+                </ul>
+              -->
+              <select class="form-control">
+                {% for narrativa in narrativas %}
+                  <option value="{{ narrativa.id }}">Narrativa {{ narrativa.id }}</option>
+                {% endfor %}
+            </select>    
+<br>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4">
+                            <a name="" id="" class="btn btn-primary" href="#" role="button">Obtener respuesta</a>
+                        </div>
+                        <div class="col-4">
+                            <a name="" id="" class="btn btn-primary" href="#" role="button">
+                                <img src="https://thumbs.dreamstime.com/b/icono-del-micr%C3%B3fono-133315614.jpg" width="30px" height="30px">
+                              </a>
+                        </div>
+                        
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+    </div>
+  </div>
+  <main>
+
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
